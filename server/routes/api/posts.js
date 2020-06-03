@@ -2,7 +2,7 @@ const express = require('express')
 const mongodb = require('mongodb');
 
 // Use your connection string inplace of MONGO_URI
-const URI = MONGO_URI;
+const URI = <MONGO_URI>;
 
 const router = express.Router();
 
