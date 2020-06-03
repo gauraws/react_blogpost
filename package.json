@@ -1,0 +1,28 @@
+{
+  "name": "full_stack_react",
+  "version": "1.0.0",
+  "description": "Full stack react app",
+  "main": "index.js",
+  "engines": {
+    "node": "12.16.x",
+    "npm": "6.14.x"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "client": "cd client && npm start",
+    "dev": "nodemon server/index.js"
+  },
+  "author": "Nick",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
