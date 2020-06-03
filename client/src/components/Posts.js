@@ -39,7 +39,7 @@ class Posts extends React.Component {
 
     componentDidMount() {
         axios.get(url)
-            .then(res => this.setState({ posts: res.data }))
+            .then(res => this.setState({ posts: res.data.reverse() }))
             .catch(err => console.log(err))
     }
 
